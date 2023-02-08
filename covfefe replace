@@ -1,0 +1,8 @@
+function covfefe(str){
+  let r = /coverage/gi //create an regExp with word to replace
+  if(r.test(str)) { //check if the word exist in the given string
+    return m_str = str.replace(r, 'covfefe') //replace all occurrences
+    } else {
+      return str+' covfefe' //add covfefe in the end if there are not coverage in the string
+      }
+}
