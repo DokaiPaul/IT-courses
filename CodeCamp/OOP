@@ -1,0 +1,17 @@
+challenge with OOP. n this chalange I had to all beagle's properties to the Own properties and those properties that don't belonge to the beagle into prototypeProps array.
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog("Snoopy");
+
+let ownProps = [];
+let prototypeProps = [];
+
+// Only change code below this line
+for (let i in beagle) {
+  Dog.hasOwnProperty(i) ? ownProps.push(i) :  prototypeProps.push(i);
+}
