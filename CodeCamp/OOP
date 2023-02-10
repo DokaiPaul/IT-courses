@@ -1,4 +1,4 @@
-challenge with OOP. n this chalange I had to all beagle's properties to the Own properties and those properties that don't belonge to the beagle into prototypeProps array.
+// 1. challenge with OOP. n this chalange I had to all beagle's properties to the Own properties and those properties that don't belonge to the beagle into prototypeProps array.
 
 function Dog(name) {
   this.name = name;
@@ -15,3 +15,31 @@ let prototypeProps = [];
 for (let i in beagle) {
   Dog.hasOwnProperty(i) ? ownProps.push(i) :  prototypeProps.push(i);
 }
+
+//2. This task is about using inheritance to avoid repeating yourself. In my opinion this method is relevant to DRY (Don't repeat yourslef) methodology.
+//I've deleted eat property from objects Cat and Bear and added this property into common class Animal.
+
+function Cat(name) {
+  this.name = name;
+}
+
+Cat.prototype = {
+  constructor: Cat
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear
+};
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: () => {
+    console.log('nom nom nom')
+  }
+};
