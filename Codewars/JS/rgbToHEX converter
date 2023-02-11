@@ -1,0 +1,23 @@
+  function numToHex (num){
+    let hexCode = "";
+    if (num <= 255) {
+      hexCode = Number(num).toString(16).toUpperCase();
+      if (hexCode.length < 2) {
+        hexCode = `0${hexCode}`.toUpperCase();
+      }
+    }
+    if (num > 255) {
+      hexCode = `ff`.toUpperCase();
+    }
+    if (num < 0) {
+      hexCode = `00`.toUpperCase();
+    }
+    return hexCode;
+  }
+  
+  function rgb(r, g, b) {
+  const red = numToHex(r);
+  const green = numToHex(g);
+  const blue = numToHex(b);
+  return red+green+blue;
+}
