@@ -36,3 +36,10 @@ function findAverag(arr) {
     }
     return 0;
 }
+
+//4. In this task I should take two arguments and check if the first argument ends with value from second argument.
+//At the beginning I wanted to write simple cycle. But I tried to google and I found out that there is built-in function in JS. And I've performed this task by this method
+
+function solution(str, ending){
+  return str.endsWith(ending);
+}
