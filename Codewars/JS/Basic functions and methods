@@ -44,7 +44,7 @@ function solution(str, ending){
   return str.endsWith(ending);
 }
 
-//Here is the function that returns the sum of squared num in array
+//5. Here is the function that returns the sum of squared num in array
 
 function squareSum(numbers){
   let acc = 0;
