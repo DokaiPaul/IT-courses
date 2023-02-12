@@ -9,3 +9,8 @@ function numberToString(num) {
 function numberToString(num) {
   return String(num);
 }
+
+//2. This is vice versa task for another one above. I have to convert the string into the number value.
+// I assume, that the input is valid. And I've tried to write the function in the arrow 'style'
+
+const stringToNumber = str => parseInt(str);
