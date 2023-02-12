@@ -1,0 +1,11 @@
+// 1. Convert number into the string. We assume, that the input is valid and is the number only. Therefore, I didn't implement the function to check the input
+
+function numberToString(num) {
+  return num.toString();
+}
+
+// Also, there is another way to perform this kind of task
+
+function numberToString(num) {
+  return String(num);
+}
