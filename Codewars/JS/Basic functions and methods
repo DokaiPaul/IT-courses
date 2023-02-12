@@ -14,3 +14,25 @@ function numberToString(num) {
 // I assume, that the input is valid. And I've tried to write the function in the arrow 'style'
 
 const stringToNumber = str => parseInt(str);
+
+//3. Here I calculated the average sum of numbers in given array. Below is the way to write a classical function with for...in cycle
+
+function findAverage(array) {
+  if(array.length === 0) {
+    return 0;
+  }
+  let sum = 0;
+  for(let i in array) {
+    sum += array[i];
+  }
+  return sum / array.length;
+}
+
+//Also, we can reach the same result by using in-built method in arrays. For instance by reduce method
+
+function findAverag(arr) {
+    if(arr.length > 0) {
+    return arr.reduce((a, b) => a + b) / arr.length
+    }
+    return 0;
+}
