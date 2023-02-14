@@ -12,3 +12,11 @@ function basicOp(operation, value1, value2)
     return value1 / value2
   }
 }
+
+//As an addition for the calculator above. We are able to perform this task by inline style with using eval() function
+//However this method is dangereous because, it takes the string and convert as executable operators and our code can behave enexpected
+
+function basicOp(operation, value1, value2)
+{
+  return eaval(value1 + operation + value2)
+}
