@@ -1,0 +1,14 @@
+//Here is the basic calculator that takes required operation and two values from the user and returns the result
+
+function basicOp(operation, value1, value2)
+{
+  if(operation === '+') {
+    return value1+value2
+  } else if(operation === '-') {
+    return value1-value2
+  } else if(operation === '*') {
+    return value1*value2
+  } else if(operation === '/') {
+    return value1 / value2
+  }
+}
