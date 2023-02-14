@@ -1,0 +1,9 @@
+//this task requires to return next square of the squre root from passed into the function value. And if the passed value does not have an just integer root we should return -1;
+
+function findNextSquare(sq) {
+  let currentRoot = Math.sqrt(sq);
+  if(Math.floor(currentRoot) === currentRoot) {
+    return (currentRoot + 1) ** 2;
+  }
+  return -1;
+}
