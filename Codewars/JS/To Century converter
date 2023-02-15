@@ -1,0 +1,5 @@
+//I have created simple function by JS to convert the given year into the particular century
+
+function century(year) {
+ return Math.ceil(year / 100)
+}
