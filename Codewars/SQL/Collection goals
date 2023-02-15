@@ -1,0 +1,4 @@
+//I has the honor to calculate the total goals amount by the Messi. Data about goals has been stored in three different columns but in the common table. I've used SQL for this task
+
+SELECT (la_liga_goals + copa_del_rey_goals + champions_league_Goals) AS res 
+FROM goals 
