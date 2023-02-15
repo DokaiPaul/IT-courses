@@ -1,0 +1,5 @@
+//Here I converted the given time in format hours, minutes and seconds into miliseconds format. Solution is very simple and effective
+
+SELECT  ((h*60 + m)*60+ s )*1000 AS res 
+
+FROM past
