@@ -1,0 +1,6 @@
+//Here I wrote the function that takes two nums and returns the sum of the numbers in a binary format. Hope, it is usefull thing :D
+
+function addBinary(a,b) {
+  const sum = a + b;
+  return sum.toString(2);
+}
