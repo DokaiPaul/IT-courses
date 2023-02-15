@@ -1,0 +1,3 @@
+//Here is presented the SQL query to dermine how much water do you need to drink according the duration of the cycling. Based on 0.5 litres per hour
+
+SELECT id, hours, FLOOR(hours*0.5) AS liters FROM cycling
