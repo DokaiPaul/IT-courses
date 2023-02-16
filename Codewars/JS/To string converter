@@ -1,0 +1,5 @@
+//This function converts passed string and returns the array with all words from given string
+
+function stringToArray(string){
+	return string.split(' ');
+}
