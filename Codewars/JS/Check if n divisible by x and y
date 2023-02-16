@@ -1,0 +1,5 @@
+//Here is presented the function 'checker' if the given number is divisible by both other given numbers
+
+function isDivisible(n, x, y) {
+  return (n % x === 0 && n % y === 0);
+}
