@@ -1,0 +1,6 @@
+//This kata looks easy but I had to google a lot before I found the nice way to complete this task
+//The main goal of this query is to replace all numbers under 5 into 0 and all numbers above 5 includes 5 into 1
+
+SELECT x, 
+  TRANSLATE(x, '123456789', '000011111') AS res 
+FROM fakebin
