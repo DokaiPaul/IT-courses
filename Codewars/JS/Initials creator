@@ -1,0 +1,6 @@
+//In this function I developed the way to convert the passed name into initial. I used map method to perform this task
+
+function abbrevName(name){
+    let arr = name.toUpperCase().split(' ');
+    return arr.map(v => v[0]).join('.')
+}
