@@ -1,0 +1,4 @@
+//Below is a simple basic summator of the given numbers
+
+SELECT SUM(age) AS age_sum 
+FROM people
