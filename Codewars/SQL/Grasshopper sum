@@ -1,0 +1,5 @@
+//In this kata I've tried to find the sum of every num from 1 to given num by user. I performed this task by pure SQL
+
+SELECT n,
+  (SELECT SUM(range) FROM generate_series(1, n) AS T(range)) AS res
+FROM kata
