@@ -1,0 +1,5 @@
+//Here I have been created the small query to replace elements by Regular expression
+
+SELECT project, commits, contributors,
+  REGEXP_REPLACE(address, '[[:digit:]]', '!', 'g') AS address
+FROM repositories
