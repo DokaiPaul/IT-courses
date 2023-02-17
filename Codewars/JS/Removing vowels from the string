@@ -1,0 +1,4 @@
+//Below is presented the function that takes string as an input and returns only consonats
+function disemvowel(str) {
+  return (str || "").replace(/[aeiou]/gi, "");
+}
