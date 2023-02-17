@@ -1,0 +1,3 @@
+//In this function I take a number and return the squred number
+
+SELECT n, n * n AS res FROM square;
