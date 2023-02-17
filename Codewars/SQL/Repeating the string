@@ -1,0 +1,2 @@
+//This function takes two params String (s) and number how many times this string should be repeated
+SELECT s, n, REPEAT(s, n) as res FROM repeatstr
