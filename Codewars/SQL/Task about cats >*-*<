@@ -1,0 +1,2 @@
+
+SELECT a, b, (b-a)/3+(b-a)%3 as res FROM jumps;
