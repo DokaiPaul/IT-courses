@@ -1,0 +1,5 @@
+SELECT p.*,
+       c.name AS company_name
+  FROM products p,
+       companies c
+ WHERE c.id = p.company_id
