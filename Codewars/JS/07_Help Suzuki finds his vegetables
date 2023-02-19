@@ -1,0 +1,14 @@
+function countVegetables(string){
+  let result = [],
+      count = string
+        .match(/cabbage|carrot|celery|cucumber|mushroom|onion|pepper|potato|tofu|turnip/g)
+        .reduce((all,veg) => {
+          all[veg] = (all[veg] || 0) + 1
+          return all
+        },{})
+  console.log(count)
+  for (let i in count) {
+    result.push([count[i],i])
+  }
+  return result.sort((a,b) => b[0] - a[0] || b[1].localeCompare(a[1]))
+}
