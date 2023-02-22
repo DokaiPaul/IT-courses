@@ -1,3 +1,4 @@
+//I have created a simple function that takes a boolean value and represents it as a string
 function booleanToString(b){
   return b.toString();
 }
