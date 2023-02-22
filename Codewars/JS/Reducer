@@ -1,3 +1,4 @@
+//this function allows us to operate an array without building cycles in our programm. Therefore, it leads us to reduce amount of written code by ourselves :)
 function grow(x){
   return x.reduce((accumulator, currentVal) => accumulator *= currentVal, 1);
 }
