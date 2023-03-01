@@ -1,0 +1,5 @@
+//Here I've created pin code validator that returns true if the input is valid for being pin code (only digits and it's length is 4 or 6 symbols)
+
+function validatePIN (pin) {
+  return /^\d+$/.test(pin) && (pin.length === 4 || pin.length === 6)
+}
