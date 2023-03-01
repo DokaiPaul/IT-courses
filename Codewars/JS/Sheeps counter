@@ -1,0 +1,11 @@
+//this code returns the total amount of true statements in array from input
+
+function countSheeps(arrayOfSheep) {
+  let counter = 0;
+  for(let sheep in arrayOfSheep) {
+    if(arrayOfSheep[sheep] === true) {
+      counter++;
+    }
+  }
+  return counter;
+}
