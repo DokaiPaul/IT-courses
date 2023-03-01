@@ -16,8 +16,8 @@ for (let i in beagle) {
   Dog.hasOwnProperty(i) ? ownProps.push(i) :  prototypeProps.push(i);
 }
 
-//2. This task is about using inheritance to avoid repeating yourself. In my opinion this method is relevant to DRY (Don't repeat yourslef) methodology.
-//I've deleted eat property from objects Cat and Bear and added this property into common class Animal.
+/**2. This task is about using inheritance to avoid repeating yourself. In my opinion this method is relevant to DRY (Don't repeat yourslef) methodology.
+I've deleted eat property from objects Cat and Bear and added this property into common class Animal. */
 
 function Cat(name) {
   this.name = name;
