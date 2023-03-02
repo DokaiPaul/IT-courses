@@ -1,0 +1,5 @@
+// this function just replace all occurancies of letter T into U
+
+function DNAtoRNA(dna) {
+  return dna.replaceAll('T','U');
+}
