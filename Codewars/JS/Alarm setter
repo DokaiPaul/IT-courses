@@ -1,0 +1,5 @@
+//the function returns true in only one particular case when first arg is true and second one is false
+
+function setAlarm(employed, vacation){
+  return employed === true && vacation === false ? true : false
+}
