@@ -1,3 +1,5 @@
+//this func makes summing all digits in input and then substract the sum of the digits from the input and finally returns string when the sum is below 100
+
 function SubtractSum(n){
   const digitSum = (n + '').split('').reduce((res, v) => res + +v, 0);
   return n - digitSum < 100 ? 'apple' : SubtractSum(n - digitSum);
