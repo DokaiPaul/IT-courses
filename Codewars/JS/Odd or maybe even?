@@ -1,0 +1,14 @@
+// this function shows us the state of sum of numbers in passed array
+
+function oddOrEven(array) {
+   if(array.length === 0){
+     return 'even';
+   } else {
+     let sum = 0;
+     array.map(v => sum += v);
+     if(sum % 2 === 0) {
+       return 'even'
+     }
+     return 'odd'
+   }
+}
