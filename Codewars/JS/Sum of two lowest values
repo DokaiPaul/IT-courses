@@ -1,0 +1,8 @@
+//this function returns the sum of thwo lovest positive values in given array
+
+function sumTwoSmallestNumbers(numbers) {
+  const filtered = numbers.filter(v => v > 0)
+  const sortedArr = filtered.sort((a,b) => a-b)
+  
+  return sortedArr[1] + sortedArr[0]
+}
