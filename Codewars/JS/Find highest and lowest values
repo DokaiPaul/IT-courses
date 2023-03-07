@@ -1,0 +1,9 @@
+//this function returns the highest and the lowest value from the given string
+
+function highAndLow(numbers){
+  let arr = numbers.split(' ');
+  let high = Math.max(...arr);
+  let low = Math.min(...arr);
+  
+  return high + ' ' + low;
+}
